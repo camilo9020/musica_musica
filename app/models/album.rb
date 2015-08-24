@@ -1,6 +1,7 @@
 class Album < ActiveRecord::Base
 
-	has_many :artists, dependent: :destroy
+	belongs_to :artist
+	has_many :songs, dependent: :destroy
 
 
 end

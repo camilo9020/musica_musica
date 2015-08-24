@@ -4,7 +4,7 @@ class CreateSongs < ActiveRecord::Migration
       t.string :name
       t.integer :number
       t.string :preview_url
-
+      
       t.timestamps null: false
     end
   end
