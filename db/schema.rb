@@ -14,12 +14,12 @@
 ActiveRecord::Schema.define(version: 20150824163336) do
 
   create_table "albums", force: :cascade do |t|
-    t.string   "name"
-    t.string   "image_url"
-    t.date     "released_at"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "artist_id"
+      t.string   "name"
+      t.string   "image_url"
+      t.date     "released_at"
+      t.datetime "created_at",  null: false
+      t.datetime "updated_at",  null: false
+      t.integer  "artist_id"
   end
 
   create_table "artists", force: :cascade do |t|
