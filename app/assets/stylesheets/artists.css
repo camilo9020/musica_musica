@@ -5,10 +5,31 @@
     margin-bottom: 30px;
  }
 
- img {
+
+.album {
+	border: 1px solid #dfdfdf;
+	height: 230px;
+	margin-bottom: 10px;
+
+}
+
+
+ .img_artist_1 {
 
  		height: 147px;
         width: 260px;
       }
 
-      
+  .img_artist_2 {
+
+ 		height: 300px;
+        width: 350px;
+      }
+
+
+     .img_album {
+		height:150px;
+		width: 180px
+
+      }
+

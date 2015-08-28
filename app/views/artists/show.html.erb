@@ -1,14 +1,33 @@
 
-<div class="container">
+<div class="container-fluid">
+		
 	<div class="row">
-		<div class="col-md-6 offset-3">
-			
-			<h1><%= @artist.name  %></h1>
+		
+		<div class="col-md-6">
+			<h1 class="text-left"><%= @artist.name  %></h1>
+			<h1 class="text-left">Albums (<%= @albums.count  %>)</h1>
+			<br>
 
-			<img src="<%= @artist.image_url%>" alt="" class="img-responsive">
 
-
+			<% @albums.each do |album| %>
+				<div class="col-md-4 album">
+					<img src="<%= album.image_url %>" alt="" class="img_album center-block">
+					<p class="text-center" ><%= album.name %></p>
+					<p class="text-center" ><%= album.released_at %></p>
+					
+				</div>
+			<% end %>
 		</div>
+
+
+
+		<div class="col-md-6 ">
+			
+			<img src="<%= @artist.image_url%>" alt="" class="img_artist_2 center-block">
+		</div>
+	
+
+	
 	</div>
 </div>
 
